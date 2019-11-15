@@ -6,8 +6,7 @@ import java.util.Stack;
 public class AlienDictionary {
 
 	static class Graph{
-		int vertex;
-		LinkedList[] adjList;
+		LinkedList<Integer>[] adjList;
 		public Graph(int v){
 			adjList = new LinkedList[v];
 			for(int i=0; i<v; i++){
@@ -72,7 +71,7 @@ public class AlienDictionary {
 	
 	
 	public static void main(String[] args) {
-		String[] words = {"baa", "abcd", "abca", "cab", "cad"};
+		String[] words = {"caa", "aaa", "aab"};
 		find(words);
 	}
 }
